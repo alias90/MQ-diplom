@@ -16,7 +16,15 @@
             <a href="#0">
               <img src="svg/noemi-logo.svg" class="header-logo" alt>
             </a>
-      
+          <!--гамбургер-->
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            </div>
+
             <!--меню-->
             <nav class="menu">
               <ul class="menu-list">
@@ -48,13 +56,65 @@
           </section>
         </div>
       </header>
+    
+      <!--Попап-->
+     <!-- <div class="popup">
+        <div class="popup-box">
+        <div class="popup-button">
+          <button class="popup-close" type="button">
+            <span class="popup-close-text">Закрыть окно</span>
+          </button>
+          </div>
+
+        <h2 class="popup-heading">Ваш фидбек</h2>
+
+        <div class="fidbeck">
+          <label class="fidbeck-heading">
+            <span class="fidbeck-text">Как часто вы заходите на сайт?</span>
+            <select class="select">
+            <option selected>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+        </label>   
+        </div>
+
+        <div class="email-distribution">
+          <span class="email-text">Вы подписаны на e-mail рассылку?</span>
+          <div class="choices">
+          <label>
+            <input type="radio" class="radio" name="email-choice">
+            <span class="email-choice-text">Да</span>
+          </label>
+          <label>
+            <input type="radio" class="radio" name="email-choice">
+            <span class="email-choice-text">Нет</span>
+          </label>
+        </div>
+        </div>
+
+        <div сlass="content-choice">
+          <form class="content-choice-input">
+            <label class="content-choice-label">
+              <span class="content-choice-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="send-input" placeholder="Может, больше рецептов?"></textarea>
+          </label>
       
+            <button class="button-send">
+              <span class="to-send">Отправить</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>-->
 <!--Сейчас в тренде-->
+<section>
 <h2 class="trend-title">Сейчас в тренде</h2>
 <div class="trends">
 <!--первый пост-->
 
-<div class="trend1">
+<div class="trend1 trend-card">
   <div class="trend-tags">
   <ul class="trend-list">
     <li class="trend-list-item">
@@ -64,30 +124,30 @@
       <a class="trend-link" href="#0">Interior</a>
     </li>
   </ul>
-<h2 class="trend-subject">
+<h3 class="trend-subject">
   <a class="trend-heading" href="#0">Сейчас в тренде: сад на подоконнике</a>
-</h2>
+</h3>
 </div>
 </div> 
   
 <!--второй пост-->
 
-<div class="trend2">
+<div class="trend2 trend-card">
   <div class="trend-tags">
   <ul class="trend-list">
     <li class="trend-list-item">
       <a class="trend-link" href="#0">Food</a>
     </li>
   </ul>
-<h2 class="trend-subject">
+<h3 class="trend-subject">
   <a class="trend-heading" href="#0">Сыры на красивых картинках из интернета: какие они на вкус?</a>
-</h2>
+</h3>
   </div>
 </div> 
 
 <!--третий пост-->
 
-<div class="trend3">
+<div class="trend3 trend-card">
   <div class="trend-tags">
   <ul class="trend-list">
     <li class="trend-list-item">
@@ -97,14 +157,14 @@
       <a class="trend-link" href="#0">Travel</a>
     </li>
   </ul>
-<h2 class="trend-subject">
+<h3 class="trend-subject">
   <a class="trend-heading" href="#0">Собираемся в первый поход в горы</a>
-</h2>
+</h3>
 </div>
 </div> 
 <!--четвертый пост-->
 
-<div class="trend4">
+<div class="trend4 trend-card">
   <div class="trend-tags">
   <ul class="trend-list">
     <li class="trend-list-item">
@@ -120,6 +180,7 @@
 </div>
 </div> 
 </div>
+</section>
 
       <page class="page">
 
@@ -403,11 +464,16 @@
       </page>
 
       <!--наши изделия-->
-      
+      <section>
       <h2 class="goods-title">Наши изделия</h2>
       <div class="goods">
         <div class="product-card">
-        <img class="product" src="images/shop-item-desk1.jpg" alt="Подушка">
+          <picture class="product">
+            <sourse media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+            <img src="images/shop-item-desk1.jpg" alt="Подушка">
+            </picture>
         <div class="goods-text">
         <h3 class="goods-heading">Подушки на диван</h3>
         <p class="goods-paragraph">Набор из двух подушек с модными принтами. Видео о создании <a class="goods-link goods-paragraph" href="#0">здесь</a>.</p>
@@ -422,7 +488,12 @@
       </div>
 
       <div class="product-card">
-        <img class="product" src="images/shop-item-desk2.jpg" alt="Кукла Зайчик рядом с книгами">
+        <picture class="product">
+          <sourse media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+          <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик рядом с книгами">
+        </picture>
         <div class="goods-text">
         <h3 class="goods-heading">Кукла "Зайчик"</h3>
         <p class="goods-paragraph">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="goods-link" href="#0">весенняя серия постов</a> в блоге и несколько подскастов.</p>
@@ -436,7 +507,12 @@
       </div>
         
       <div class="product-card">
-        <img class="product" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка с цветами в вазе">
+        <picture class="product">
+          <sourse media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+          <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+          <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка с цветами в вазе">
+        </picture>
         <div class="goods-text">
         <h3 class="goods-heading">Шестиугольная рамка</h3>
         <p class="goods-paragraph">Необычная рамка для украшения дома из видео <a class="goods-link" href="#0">"Как сделать рамку из подручных средств за 30 минут"</a></p>
@@ -450,6 +526,7 @@
         </div>
       </div>
       </div>
+    </section>
       <!--подвал-->
       <footer class="footer">
 
