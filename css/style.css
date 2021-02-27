@@ -72,6 +72,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
   }
   .popup::after {
     content: "";
@@ -432,6 +433,7 @@
     background-color: #f4f7f6;
     margin-right: 0;
     padding-left: 18px;
+    border-radius: none;
   }
   .button-search {
     background-color: #b59f5b;
@@ -1068,17 +1070,22 @@ aside {
  .header {
   background-image: url(../images/banner-mobile.jpg);
 }
+.header-content {
+  flex-direction: column;
+}
 .header-logo {
   width: 270px;
   margin-top: 225px;
   margin-bottom: 45px;
-  position: absolute;
-  left: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hamburger-menu {
-  order: 99;
   margin-top: 30px;
   margin-right: 35px;
+  margin-left: auto;
+  order: -1;
 }
 .menu__btn {
   display: flex; 
@@ -1106,7 +1113,7 @@ aside {
   top: 8px;
 }
 .menu {
-  opacity: 0;
+  display: none;
 }
 .header-text {
   width: 280px;
