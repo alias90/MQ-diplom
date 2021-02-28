@@ -156,6 +156,7 @@
     background-size: 10px;
     border: none;
     background-color: #f4f7f6;
+    border-radius: 0;
   }
   .email-distribution {
     display: flex;
@@ -205,6 +206,7 @@
     box-sizing: border-box;
     border: none;
     background-color: #f4f7f6;
+    border-radius: 0;
   }
   .button-send {
     background-color: #b59f5b;
@@ -433,7 +435,7 @@
     background-color: #f4f7f6;
     margin-right: 0;
     padding-left: 18px;
-    border-radius: none;
+    border-radius: 0;
   }
   .button-search {
     background-color: #b59f5b;
@@ -460,6 +462,7 @@
     background-color: #f4f7f6;
     padding-left: 18px;
     box-sizing: border-box;
+    border-radius: 0;
   }
   .button {
     background-color: #b59f5b;
@@ -596,19 +599,22 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  .button-goods {
+  .shop {
+    display: flex;
     font-family: Open-sans, sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     height: 48px;
     background-color: #b59f5b;
-    color: white;
     border-style: none;
+    width: 140px;
+  }
+  .shop-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 15px;
     padding-left: 28px;
-    padding-right: 28px;
-    flex-shrink:0;
-    
   }
 /*подвал*/
   .footer {
@@ -876,6 +882,7 @@ aside {
  /*шапка*/
  .header {
   background-image: url(../images/banner-bg-tablet.jpg);
+  padding: 30px 15px;
 }
 .header-logo {
   width: 160px;
