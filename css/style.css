@@ -883,7 +883,6 @@ aside {
  /*шапка*/
  .header {
   background-image: url(../images/banner-bg-tablet.jpg);
-  padding: 30px 15px;
 }
 .header-logo {
   width: 160px;
@@ -1077,6 +1076,7 @@ aside {
  /*шапка*/
  .header {
   background-image: url(../images/banner-mobile.jpg);
+  padding: 30px 15px;
 }
 .header-content {
   flex-direction: column;
@@ -1090,8 +1090,6 @@ aside {
   margin-right: auto;
 }
 .hamburger-menu {
-  margin-top: 30px;
-  margin-right: 35px;
   margin-left: auto;
   order: -1;
 }
