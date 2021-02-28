@@ -429,7 +429,7 @@
     font-weight: 400;
     font-size: 13px;
     border-style: none;
-    height: 47px;
+    height: 48px;
     box-sizing: border-box;
     margin-top: 60px;
     background-color: #f4f7f6;
@@ -694,7 +694,8 @@
   }
   .button-send:hover,
   .button-search:hover,
-  .button:hover {
+  .button:hover,
+  .shop:hover {
     border: 1px solid #b59f5b;
   }
   .select:focus,
