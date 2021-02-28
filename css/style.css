@@ -694,8 +694,7 @@
   }
   .button-send:hover,
   .button-search:hover,
-  .button:hover,
-  .shop:hover {
+  .button:hover {
     border: 1px solid #b59f5b;
   }
   .select:focus,
@@ -709,7 +708,8 @@
   }
   .button-send:focus,
   .button-search:focus,
-  .button:focus {
+  .button:focus,
+  .shop:focus {
     outline: none;
   }
 @media (min-width: 1200px), (orientation: landscape) {
