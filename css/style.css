@@ -181,12 +181,9 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
-    width: 20px;
-    height: 20px;
     background-image: url(../svg/form-empty-circle.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 20px;
   }
   .radio:checked ~ .email-choice-text::before {
     background-image: url(../svg/form-circle.svg);
@@ -765,6 +762,11 @@
 .email-choice-text {
   margin-right: 15px;
 }
+.email-choice-text::before {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
 .send-input {
   width: 330px;
 }
@@ -948,6 +950,11 @@ aside {
 .email-choice-text {
   margin-right: 35px;
 }
+.email-choice-text::before {
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
 .send-input {
   width: 330px;
 }
@@ -989,7 +996,11 @@ aside {
   width: 700px;
 }
 main {
-  width: 390px;
+  width: 390px; 
+}
+.content {
+  display: flex;
+  flex-direction: column;
 }
 .image {
   width: 390px;
@@ -1147,6 +1158,11 @@ aside {
 .email-choice-text {
   margin-right: 35px;
 }
+.email-choice-text::before {
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
 .send-input {
   width: 280px;
 }
@@ -1190,6 +1206,9 @@ aside {
 }
 main {
   width: 330px;
+}
+.content {
+  display: block;
 }
 .image {
   width: 100%;
