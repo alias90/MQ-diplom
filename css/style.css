@@ -304,7 +304,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  main {
+  .main {
     display: flex;
     flex-direction: column;
   }
@@ -803,7 +803,7 @@
   margin-top: 60px;
   width: 1170px;
 }
-main {
+.main {
   width: 780px;
 }
 .image {
@@ -995,7 +995,7 @@ aside {
   margin-top: 50px;
   width: 700px;
 }
-main {
+.main {
   width: 390px; 
 }
 .content {
@@ -1204,7 +1204,7 @@ aside {
   margin-top: 45px;
   width: 330px;
 }
-main {
+.main {
   width: 330px;
 }
 .content {
