@@ -108,7 +108,7 @@
     position: absolute;
     width: 1px;
     height: 1px;
-    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
   }
   .popup-heading {
     font-family: Open-sans, sans-serif;
@@ -168,7 +168,7 @@
   }
   .radio {
     position: absolute;
-    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     width: 1px;
   }
@@ -709,7 +709,7 @@
   .shop:focus {
     outline: none;
   }
-@media (min-width: 1200px), (orientation: landscape) {
+@media (min-width: 1200px) {
   .header {
     background-image: url(../images/banner-bg.jpg);
   }
@@ -881,7 +881,7 @@ aside {
   width: 1170px;
 }
 }
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1199px){
  /*шапка*/
  .header {
   background-image: url(../images/banner-bg-tablet.jpg);
@@ -993,10 +993,11 @@ aside {
 /*основной раздел*/
 .page {
   margin-top: 50px;
-  width: 700px;
+  width: 100%;
+
 }
 .main {
-  width: 390px; 
+  width: 56%; 
 }
 .content {
   display: flex;
@@ -1037,7 +1038,7 @@ aside {
 }
 /*сайбар*/
 aside {
-  width: 272px;
+  width: 39%;
 }
 .heading {
   font-size: 14px;
@@ -1288,5 +1289,17 @@ aside {
 }
 .adress {
   width: 330px;
+}
+}
+@media (max-width: 1199px) and (min-width: 641px) and (orientation: landscape) {
+  .trend-card {
+    width: calc(25% - 5px);
+    height: 320px;
+  }
+}
+@media (max-height: 641px) and (orientation: landscape) {
+  .trend-card {
+  width: calc(50% - 2px);
+  height: 245px;
 }
 }
