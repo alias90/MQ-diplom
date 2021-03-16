@@ -993,11 +993,11 @@ aside {
 /*основной раздел*/
 .page {
   margin-top: 50px;
-  width: 100%;
-
+  width: 700px;
+  
 }
 .main {
-  width: 56%; 
+  width: 390px; 
 }
 .content {
   display: flex;
@@ -1038,7 +1038,7 @@ aside {
 }
 /*сайбар*/
 aside {
-  width: 39%;
+  width: 272px;
 }
 .heading {
   font-size: 14px;
@@ -1140,7 +1140,6 @@ aside {
   font-size: 26px;
   line-height: 36px;
   padding-bottom: 220px;
-  padding-top: 190px;
 }
 /*Попап*/
 .popup-box {
